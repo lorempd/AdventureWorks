@@ -10,11 +10,45 @@ using System.Windows.Forms;
 
 namespace AdventureWorks
 {
-    public partial class Form1 : Form
+    public partial class FrmOperaciones : Form
     {
-        public Form1()
+        public FrmOperaciones()
         {
             InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnListar_Click(object sender, EventArgs e)
+        {
+            frmListar listar = new frmListar();
+            listar.ShowDialog();
+        }
+
+        private void btnCrear_Click(object sender, EventArgs e)
+        {
+            frmCrear crear = new frmCrear();
+            crear.ShowDialog();
+        }
+
+        private void btnActualizar_Click(object sender, EventArgs e)
+        {
+            frmActualizar actualizar = new frmActualizar();
+            actualizar.ShowDialog();
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            frmEliminar eliminar = new frmEliminar();
+            eliminar.ShowDialog();
         }
     }
 }
